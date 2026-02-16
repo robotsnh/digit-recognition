@@ -12,6 +12,7 @@ class Neuron:
     def forward(self, input):
         self.last_input = input
         return self._sigmoid(self.weight * input + self.bias)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 96d26b5 (Fixed code with clean history)
@@ -25,3 +26,5 @@ class Neuron:
 =======
     
 >>>>>>> 96d26b5 (Fixed code with clean history)
+=======
+>>>>>>> 2a87ae9 (Created `forward` function for `Neuron` class)
