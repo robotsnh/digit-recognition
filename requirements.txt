@@ -1,3 +1,6 @@
-cmu-graphics==1.1.45
-pycairo==1.29.0
+certifi==2026.1.4
+charset-normalizer==3.4.4
+idna==3.11
 pygame-ce==2.5.6
+requests==2.32.5
+urllib3==2.6.3
