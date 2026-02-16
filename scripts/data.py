@@ -8,6 +8,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 # This part is by me
 from pathlib import Path
 srctree = str(Path(dir_path).parent)
+srctree = f"{dir_path}/.."
 
 import requests
 
