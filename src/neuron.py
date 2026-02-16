@@ -5,26 +5,8 @@ class Neuron:
         self.weight = 0
         self.bias = 0
         self.last_input = None
-<<<<<<< HEAD
-<<<<<<< HEAD
     def _sigmoid(self, x):
         return 1 / (1 + math.exp(-x))
     def forward(self, input):
         self.last_input = input
         return self._sigmoid(self.weight * input + self.bias)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 96d26b5 (Fixed code with clean history)
-    def activation_function(self, x):
-        return 1 / (1 + math.exp(-x))
-    def forward(self, input):
-        self.last_input = input
-        return self.activation_function(self.weight * input + self.bias)
-<<<<<<< HEAD
->>>>>>> d54d40a (Added back activation function and forward function)
-=======
-    
->>>>>>> 96d26b5 (Fixed code with clean history)
-=======
->>>>>>> 2a87ae9 (Created `forward` function for `Neuron` class)
