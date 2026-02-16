@@ -16,3 +16,6 @@ zip_link = "https://drive.usercontent.google.com/u/0/uc?id=1eEKzfmEu6WKdRlohBQiq
 with open(f"{srctree}/data/data_zip.zip") as zip_file:
     content = requests.get(zip_link, stream=True).content
     zip_file.write(str(content))
+
+import zipfile
+
