@@ -1,0 +1,6 @@
+#!/bin/bash
+
+thisdir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)
+treebase=$thisdir
+
+python $treebase/scripts/data.py || python3 $treebase/scripts/data.py
