@@ -6,17 +6,21 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # This part is by me
-print(dir_path)
-srctree = f"{dir_path}/.."
+from pathlib import Path
+srctree = str(Path(dir_path).parent)
 
 import requests
 
 zip_link = "https://drive.usercontent.google.com/u/0/uc?id=1eEKzfmEu6WKdRlohBQiqi3PhW_uIVJVP&export=download"
-zip_location = f"{srctree}/data/data_zip.zip"
+zip_location = Path(f"{srctree}/data/data_zip.zip")
 
-with open(f"{srctree}/data/data_zip.zip") as zip_file:
+zip_location.parent.mkdir(parents=True, exist_ok=True)
+
+Path(zip_location).touch()
+
+with open(f"{srctree}/data/data_zip.zip", "wb") as zip_file:
     content = requests.get(zip_link, stream=True).content
-    zip_file.write(str(content))
+    zip_file.write(content)
 
 # Source - https://stackoverflow.com/a/12886818
 # Posted by phihag, modified by community. See post 'Timeline' for change history
