@@ -1,1 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 * @robotsnh @gamer10297
+=======
+src/* @robotsnh @gamer10297
+.gitignore @robotsnh
+get_data @robotsnh
+LICENSE @robotsnh
+scripts/* @robotsnh
+requirements.txt @robotsnh
+.github/* @robotsnh
+>>>>>>> ed61ce3 (Create a CODEOWNERS file)
+=======
+* @robotsnh @gamer10297
+>>>>>>> 561b058 (Updated the CODEOWNERS file)
