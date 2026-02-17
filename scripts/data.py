@@ -50,3 +50,12 @@ unzip(zip_location, f"{srctree}/data")
 os.remove(zip_location)
 os.remove(f"{srctree}/data/generate_mnist_csv.py")
 os.remove(f"{srctree}/data/readme.md")
+<<<<<<< HEAD
+=======
+=======
+
+with open(f"{srctree}/data/data_zip.zip") as zip_file:
+    content = requests.get(zip_link, stream=True).content
+    zip_file.write(str(content))
+>>>>>>> 5661c84 (Add data fetch scripts (bash + Python))
+>>>>>>> a8a11ee (Add data fetch scripts (bash + Python))
