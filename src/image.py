@@ -1,3 +1,4 @@
 class Image(object):
-    def __init__(self, line: list[int]):
-        self.digit = line[0]
+    def __init__(self, data: list[int]):
+        self.data = data
+        self.digit = data[0]
