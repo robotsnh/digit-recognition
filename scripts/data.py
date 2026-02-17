@@ -47,3 +47,6 @@ def unzip(source_filename, dest_dir):
 
 #this is my code again
 unzip(zip_location, f"{srctree}/data")
+os.remove(zip_location)
+os.remove(f"{srctree}/data/generate_mnist_csv.py")
+os.remove(f"{srctree}/data/readme.md")
